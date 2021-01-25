@@ -1,0 +1,11 @@
+.history {
+  overflow-x: scroll;
+  padding: 0.5rem;
+  height: 100%;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
