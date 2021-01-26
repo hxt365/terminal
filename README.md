@@ -21,7 +21,7 @@ yarn start
 
 ![VFS Terminal](https://user-images.githubusercontent.com/16115992/105799837-82e22280-5fa6-11eb-889f-510d992bce8c.png)
 
-[Demo](https://vfs-filesystem.herokuapp.com/)
+[Demo](https://vfs-system.herokuapp.com/)
 
 # Links
 
