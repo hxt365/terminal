@@ -35,7 +35,6 @@ export default function Message({ folderPath, isCommand = false, content }) {
   useEffect(() => {
     if (content?.items) {
       // response of ls command
-      console.log(content.items.toString());
       textRef.current.innerHTML = ls_representation(content.items);
     } else if (content?.content) {
       // response of cat command

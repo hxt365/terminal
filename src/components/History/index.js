@@ -9,7 +9,7 @@ export default function History() {
 
   const scrollToBottom = () => {
     animateScroll.scrollToBottom({
-      containerId: "history",
+      containerId: "historyID",
       duration: 100,
     });
   };
@@ -19,7 +19,7 @@ export default function History() {
   }, [history]);
 
   return (
-    <div className="history" id="history">
+    <div className="history" id="historyID">
       {history.map((msg) => (
         <Message
           key={msg.key}
