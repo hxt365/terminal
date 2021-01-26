@@ -7,20 +7,33 @@
     margin: 0;
   }
 
+  .table_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+
   table {
     margin: 0.5rem 0;
     border-collapse: collapse;
-    border-spacing: 20px;
   }
 
   table,
   td,
   th {
-    border: 1px solid white;
+    border: none;
     padding: 0.5rem;
   }
 
   td {
     text-align: start;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .time {
+    width: 28%;
   }
 }

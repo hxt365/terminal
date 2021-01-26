@@ -1,26 +1,31 @@
 import "./Message.scss";
 import { useEffect, useRef } from "react";
+import moment from "moment";
 
 export default function Message({ folderPath, isCommand = false, content }) {
   const textRef = useRef(null);
 
   const ls_representation = (items) => {
-    let table = ` <table>
+    let table = `<div class="table_wrapper"><table>
     <tr>
-      <th>created_at</th>
-      <th>updated_at</th>
+      <th class="time">created_at</th>
+      <th class="time">updated_at</th>
       <th>size</th>
       <th>name</th>
     </tr>`;
     items.forEach((item) => {
       table += `<tr>
-      <td>${item.created_at}</td>
-        <td>${item.updated_at}</td>
-        <td>${item.size}</td>
+      <td class="center time">${moment(item.created_at).format(
+        "MMMM Do YYYY, h:mm:ss a"
+      )}</td>
+        <td class="center time">${moment(item.updated_at).format(
+          "MMMM Do YYYY, h:mm:ss a"
+        )}</td>
+        <td class="center">${item.size}</td>
         <td>${item.name}</td>
       </tr>`;
     });
-    table += "</table>";
+    table += "</table></div>";
     return table;
   };
 

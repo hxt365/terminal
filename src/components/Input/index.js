@@ -5,6 +5,7 @@ import Textarea from "react-expanding-textarea";
 import { HistoryContext, LoadingContext } from "store/context";
 import { RPC, sanitizeCmd, validateCmd } from "services/command";
 import get_manual from "services/manual";
+import { animateScroll } from "react-scroll";
 
 const MAX_LENGTH_INPUT = 2000;
 
@@ -110,8 +111,16 @@ export default function Input() {
         isCommand: true,
         content: cmd,
       });
+      animateScroll.scrollToBottom({
+        containerId: "historyID",
+        duration: 100,
+      });
       setLoading(true);
       execute().then(() => reset());
+      animateScroll.scrollToBottom({
+        containerId: "historyID",
+        duration: 100,
+      });
     }
     if (e.keyCode === 38) {
       // up button
