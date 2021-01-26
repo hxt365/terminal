@@ -3,6 +3,13 @@
 Front-end part of 3-day-long project Virtual File System.  
 In this project, I built a simple web-based file system, which then can be interacted with through the terminal.
 
+## Features
+
+1. Command manual.
+2. History with up/down button.
+3. Auto scrolling.
+4. User-friendly interface.
+
 ## You can run
 
 ```bash
@@ -19,7 +26,7 @@ yarn start
 
 # Demo
 
-![VFS Terminal](https://user-images.githubusercontent.com/16115992/105799837-82e22280-5fa6-11eb-889f-510d992bce8c.png)
+![VFS Terminal](https://user-images.githubusercontent.com/16115992/105859089-2cec9980-5ffd-11eb-8d5d-5a1975bbe72d.png)
 
 [Demo](https://vfs-system.herokuapp.com/)
 
